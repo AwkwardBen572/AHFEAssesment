@@ -1,0 +1,134 @@
+/* FONTS */
+
+@font-face {
+  font-family: "sofia_pro_black_az";
+  src: url("/src/assets/fonts/sofia_pro_black_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_black_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_black_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_bold_az";
+  src: url("/src/assets/fonts/sofia_pro_bold_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_bold_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_bold_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_extra_light_az";
+  src: url("/src/assets/fonts/sofia_pro_extra_light_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_extra_light_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_extra_light_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_light_az";
+  src: url("/src/assets/fonts/sofia_pro_light_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_light_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_light_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_medium_az";
+  src: url("/src/assets/fonts/sofia_pro_medium_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_medium_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_medium_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_regular_az";
+  src: url("/src/assets/fonts/sofia_pro_regular_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_regular_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_regular_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_semi_bold_az";
+  src: url("/src/assets/fonts/sofia_pro_semi_bold_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_semi_bold_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_semi_bold_italic_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_ultra_light_az";
+  src: url("/src/assets/fonts/sofia_pro_ultra_light_az.otf")
+}
+
+@font-face {
+  font-family: "sofia_pro_ultra_light_italic_az";
+  src: url("/src/assets/fonts/sofia_pro_ultra_light_italic_az.otf")
+}
+
+.font_size_xs {
+  font-size: 1rem;
+}
+
+.font_size_s {
+  font-size: 1.2rem;
+}
+
+.font_size {
+  font-size: 1.5rem;
+}
+
+.font_size_m {
+  font-size: 2rem;
+}
+
+.font_size_l {
+  font-size: 2rem;
+}
+
+.font_size_xl {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+
+  .font_size_xs {
+    font-size: 0.8rem;
+  }
+
+  .font_size_s {
+    font-size: 1em;
+  }
+
+  .font_size {
+    font-size: 1rem;
+  }
+
+  .font_size_m {
+    font-size: 1.2rem;
+  }
+
+  .font_size_l {
+    font-size: 1.3rem;
+  }
+
+  .font_size_xl {
+    font-size: 1.6rem;
+  }
+}
+
+/* FONTS */
