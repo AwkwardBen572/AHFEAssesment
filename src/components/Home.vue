@@ -5,7 +5,7 @@
         <div class="greetings_name_holder">
           <div class="greetings font_size">
             <div class="greetings_time_of_day"><i :class="timeOfDayIcon" class="time_of_day_icon"></i>Good {{ greeting
-              }}
+            }}
             </div>
           </div>
           <div class="name font_size_xl">
@@ -79,7 +79,7 @@
       </div>
       <div class="popular_recipes">
         <div class="popular_recipes_sub_holder">
-          <div class="popular_recipe_item_holder font_size" v-for="(recipe, index) in filteredRecipes" :key="index" >
+          <div class="popular_recipe_item_holder font_size" v-for="(recipe, index) in filteredRecipes" :key="index">
             <div class="popular_recipe_item" @click="openRecipe(recipe)">
               <div class="recipe_image_holder" :style="{
                 backgroundImage: `url(${recipe.images[2].url})`,
@@ -133,20 +133,22 @@ const favoriteRecipes = ref([])
 
 const user = store.getUserData()
 const timeOfDay = new Date().getHours()
-const timeOfDayIcon = ref("fa fa-moon-o")
-const greeting = ref("Morning")
+const greeting = ref("")
+const timeOfDayIcon = ref("")
 
 if (timeOfDay >= 7 && timeOfDay < 12) {
+  greeting.value = "Morning"
   timeOfDayIcon.value = "fa fa-sun-o"
-}
-else if (timeOfDay >= 12 && timeOfDay < 17) {
+} else if (timeOfDay >= 12 && timeOfDay < 18) {
   greeting.value = "Afternoon"
   timeOfDayIcon.value = "fa fa-sun-o"
+} else {
+  greeting.value = "Evening"
+  timeOfDayIcon.value = "fa fa-moon-o"
 }
-else if (timeOfDay >= 18 && timeOfDay < 23) greeting.value = "Evening"
 
 const featuredItems = ref([
-  { key: "asian_noodles", label: "Asian Noodles with extra seafood", url: asianNoodles, cooking_time: 900, creator: "James Spader", pfp_url: jamesSpader },
+  { key: "asian_noodles", label: "Asian White Noodles with extra seafood", url: asianNoodles, cooking_time: 900, creator: "James Spader", pfp_url: jamesSpader },
   { key: "french_toast", label: "French Toast with berries and syrup", url: frenchToast, cooking_time: 1800, creator: "Peter Parker", pfp_url: peterParker }
 ])
 
@@ -363,7 +365,6 @@ onMounted(async () => {
   border-radius: 50%;
   border: 0.1rem solid #ffffff;
   margin-right: 1rem;
-  background-color: blue;
 }
 
 .featured_item_cooking_time {

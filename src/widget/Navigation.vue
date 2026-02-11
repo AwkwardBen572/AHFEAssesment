@@ -1,6 +1,6 @@
 <template>
   <div class="navigation_holder">
-    <svg class="navigation_svg" viewBox="0 0 375 200" fill="none" xmlns="http://www.w3.org/2000/svg"
+    <svg class="navigation_svg" viewBox="0 0 375 150" fill="none" xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none">
       <g filter="url(#filter0_d_1764_407)">
         <path
@@ -117,7 +117,7 @@ const navigationItems = [
     width: 4rem;
     height: 4rem;
     box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.4);
-    margin-bottom: 5.5rem;
+    margin-bottom: 6rem;
   }
 }
 </style>
