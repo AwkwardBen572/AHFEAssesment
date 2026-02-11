@@ -7,10 +7,10 @@
             <div class="functionality_icon font_size_l" @click="closeDetails()">
                 <i class="fa fa-times"></i>
             </div>
-            <div class="functionality_icon">
+            <div class="functionality_icon" @click.stop="addToFavs(recipe)">
                 <i class="far fa-heart"
                     :class="['add_to_favs', isFavorite(recipe) ? 'fas fa-heart favorited' : 'far fa-heart']"
-                    @click.stop="addToFavs(recipe)"></i>
+                    ></i>
             </div>
         </div>
 
@@ -601,7 +601,7 @@ const formatInstructions = (instruction) => {
 
 .creator_pfp {
     width: 85%;
-    height: 50%;
+    height: 80%;
     border-radius: 50%;
     border: 0.1rem solid #70b9be;
 }
