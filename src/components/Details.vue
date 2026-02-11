@@ -357,7 +357,7 @@ const formatInstructions = (instruction) => {
 
 .details_functionality_holder {
     width: 100%;
-    height: 35rem;
+    height: 45rem;
     display: flex;
     justify-content: space-between;
 }
