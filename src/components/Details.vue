@@ -34,7 +34,7 @@
 
                     <span v-if="recipe.description.length > 70"
                         style="color:#042628; cursor: pointer; margin-left: 0.25rem;" @click="toggleDescription">
-                        {{ isExpanded ? 'View Less' : 'View More' }}
+                        {{ isExpanded ? "View Less" : "View More" }}
                     </span>
                 </div>
                 <div class="macros_holder">
@@ -160,46 +160,46 @@ import { useRoute, useRouter } from "vue-router"
 import { afrihostStore } from "../data/afrihostStore"
 import { ref, onMounted } from "vue"
 
-import appleCider from '../assets/recipe_images/apple_cider.png'
-import avocado from '../assets/recipe_images/avocado.png'
-import beefBrisket from '../assets/recipe_images/beef_brisket.png'
-import beefStock from '../assets/recipe_images/beef_stock.png'
-import bellPepper from '../assets/recipe_images/bell_pepper.png'
-import blackBeans from '../assets/recipe_images/black_beans.png'
-import breadCrumbs from '../assets/recipe_images/bread_crumbs.png'
-import brownSugar from '../assets/recipe_images/brown_sugar.png'
-import butter from '../assets/recipe_images/butter.png'
-import cherryTomatoes from '../assets/recipe_images/cherry_tomatoes.png'
-import chilliPowder from '../assets/recipe_images/chilli_powder.png'
-import cilantro from '../assets/recipe_images/cilantro.png'
-import cornFlour from '../assets/recipe_images/corn_flour.png'
-import egg from '../assets/recipe_images/egg.png'
-import flour from '../assets/recipe_images/flour.png'
-import garlicPowder from '../assets/recipe_images/garlic_powder.png'
-import greekYogurt from '../assets/recipe_images/greek_yogurt.png'
-import groundCinnamon from '../assets/recipe_images/ground_cinnamon.png'
-import groundTurkey from '../assets/recipe_images/ground_turkey.png'
-import groundBlackPepper from '../assets/recipe_images/ground_black_pepper.png'
-import lemonWedges from '../assets/recipe_images/lemon_wedges.png'
-import lettuce from '../assets/recipe_images/lettuce.png'
-import limeJuice from '../assets/recipe_images/lime_juice.png'
-import milk from '../assets/recipe_images/milk.png'
-import oliveOil from '../assets/recipe_images/olive_oil.png'
-import onionPowder from '../assets/recipe_images/onion_powder.png'
-import paprika from '../assets/recipe_images/paprika.png'
-import pepper from '../assets/recipe_images/pepper.png'
-import porkLoin from '../assets/recipe_images/pork_loin.png'
-import redOnion from '../assets/recipe_images/red_onion.png'
-import salt from '../assets/recipe_images/salt.png'
-import tacoSeasoning from '../assets/recipe_images/taco_seasoning.png'
-import vanillaEssence from '../assets/recipe_images/vanilla_essence.png'
-import vegOil from '../assets/recipe_images/veg_oil.png'
-import whiteSugar from '../assets/recipe_images/white_sugar.png'
+import appleCider from "../assets/recipe_images/apple_cider.png"
+import avocado from "../assets/recipe_images/avocado.png"
+import beefBrisket from "../assets/recipe_images/beef_brisket.png"
+import beefStock from "../assets/recipe_images/beef_stock.png"
+import bellPepper from "../assets/recipe_images/bell_pepper.png"
+import blackBeans from "../assets/recipe_images/black_beans.png"
+import breadCrumbs from "../assets/recipe_images/bread_crumbs.png"
+import brownSugar from "../assets/recipe_images/brown_sugar.png"
+import butter from "../assets/recipe_images/butter.png"
+import cherryTomatoes from "../assets/recipe_images/cherry_tomatoes.png"
+import chilliPowder from "../assets/recipe_images/chilli_powder.png"
+import cilantro from "../assets/recipe_images/cilantro.png"
+import cornFlour from "../assets/recipe_images/corn_flour.png"
+import egg from "../assets/recipe_images/egg.png"
+import flour from "../assets/recipe_images/flour.png"
+import garlicPowder from "../assets/recipe_images/garlic_powder.png"
+import greekYogurt from "../assets/recipe_images/greek_yogurt.png"
+import groundCinnamon from "../assets/recipe_images/ground_cinnamon.png"
+import groundTurkey from "../assets/recipe_images/ground_turkey.png"
+import groundBlackPepper from "../assets/recipe_images/ground_black_pepper.png"
+import lemonWedges from "../assets/recipe_images/lemon_wedges.png"
+import lettuce from "../assets/recipe_images/lettuce.png"
+import limeJuice from "../assets/recipe_images/lime_juice.png"
+import milk from "../assets/recipe_images/milk.png"
+import oliveOil from "../assets/recipe_images/olive_oil.png"
+import onionPowder from "../assets/recipe_images/onion_powder.png"
+import paprika from "../assets/recipe_images/paprika.png"
+import pepper from "../assets/recipe_images/pepper.png"
+import porkLoin from "../assets/recipe_images/pork_loin.png"
+import redOnion from "../assets/recipe_images/red_onion.png"
+import salt from "../assets/recipe_images/salt.png"
+import tacoSeasoning from "../assets/recipe_images/taco_seasoning.png"
+import vanillaEssence from "../assets/recipe_images/vanilla_essence.png"
+import vegOil from "../assets/recipe_images/veg_oil.png"
+import whiteSugar from "../assets/recipe_images/white_sugar.png"
 
-import nataliaLuca from '../assets/featured_items/natalia_luca.jpg'
-import eggAvo from '../assets/recipe_images/egg_avo.jpg'
-import beefRice from '../assets/recipe_images/beef_rice.jpg'
-import chickenSchnitzel from '../assets/recipe_images/chicken_schnitzel.jpg'
+import nataliaLuca from "../assets/featured_items/natalia_luca.jpg"
+import eggAvo from "../assets/recipe_images/egg_avo.jpg"
+import beefRice from "../assets/recipe_images/beef_rice.jpg"
+import chickenSchnitzel from "../assets/recipe_images/chicken_schnitzel.jpg"
 
 const route = useRoute()
 const router = useRouter()
@@ -210,8 +210,8 @@ const favoriteRecipes = ref([])
 const isExpanded = ref(false)
 const selectedDetail = ref("ingredients")
 const recipeInfoItems = ref([
-    { key: 'ingredients', label: 'Ingredients' },
-    { key: 'instructions', label: 'Instructions' }
+    { key: "ingredients", label: "Ingredients" },
+    { key: "instructions", label: "Instructions" }
 ])
 const relatedRecipes = ref([
     { key: "egg_avo", label: "Egg & Avocado on Toast", url: eggAvo },
@@ -273,7 +273,7 @@ onMounted(async () => {
 })
 
 const closeDetails = () => {
-    router.push({ name: 'Home' })
+    router.push({ name: "Home" })
 }
 
 const setSelectedDetail = (selected) => {

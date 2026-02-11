@@ -99,7 +99,7 @@
                 <div class="recipe_info_holder font_size_xs">
                   <div>
                     <i class="fas fa-fire-alt" style="margin-right: 0.3rem"></i>{{recipe.meta.nutrients.find(n =>
-                      n.label === 'Kcal').amount}} Kcal
+                      n.label === "Kcal").amount}} Kcal
                   </div>
                   <div>
                     <i class="fa fa-clock-o" style="margin-right: 0.3rem"></i>{{
@@ -120,10 +120,10 @@
 import { afrihostStore } from "../data/afrihostStore"
 import { ref, onMounted, computed } from "vue"
 import { useRouter } from "vue-router"
-import asianNoodles from '../assets/featured_items/asian_noodles.png'
-import frenchToast from '../assets/featured_items/french_toast.png'
-import jamesSpader from '../assets/featured_items/james_spader.jpg'
-import peterParker from '../assets/featured_items/peter_parker.jpg'
+import asianNoodles from "../assets/featured_items/asian_noodles.png"
+import frenchToast from "../assets/featured_items/french_toast.png"
+import jamesSpader from "../assets/featured_items/james_spader.jpg"
+import peterParker from "../assets/featured_items/peter_parker.jpg"
 
 const router = useRouter()
 const store = afrihostStore()
@@ -189,7 +189,7 @@ const convertCookingTime = (cookingTime) => {
 }
 
 const openRecipe = (recipe) => {
-  router.push({ name: 'Details', params: { id: recipe.id } })
+  router.push({ name: "Details", params: { id: recipe.id } })
 }
 
 const addToFavs = (item) => {
