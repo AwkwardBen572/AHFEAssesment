@@ -603,7 +603,7 @@ const formatInstructions = (instruction) => {
     width: 85%;
     height: 50%;
     border-radius: 50%;
-    border: 0.1rem solid #67bed9;
+    border: 0.1rem solid #70b9be;
 }
 
 .creator_name_holder {
@@ -645,7 +645,7 @@ const formatInstructions = (instruction) => {
     display: flex;
     justify-content: center;
     font-family: "sofia_pro_semi_bold_az";
-    color: #67bed9;
+    color: #70b9be;
     cursor: pointer;
 }
 

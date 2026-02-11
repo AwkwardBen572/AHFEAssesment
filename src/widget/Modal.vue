@@ -46,7 +46,7 @@ const props = defineProps({
 .modal_heading_holder {
     width: 100%;
     padding: 0.3rem;
-    background-color: #67bed9;
+    background-color: #70b9be;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ const props = defineProps({
 .modal_content_holder {
     width: 80%;
     padding: 1rem;
-    color: #000000;
+    color: #042628;
     display: flex;
     justify-content: center;
     align-items: center;

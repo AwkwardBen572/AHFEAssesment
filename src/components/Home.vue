@@ -252,7 +252,7 @@ onMounted(async () => {
 }
 
 .time_of_day_icon {
-  color: #67bed9;
+  color: #70b9be;
   height: 25%;
   margin-right: 0.75rem;
 }
@@ -324,7 +324,7 @@ onMounted(async () => {
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: center;
-  background-color: #67bed9;
+  background-color: #70b9be;
   border-radius: 1rem;
 }
 
@@ -405,7 +405,7 @@ onMounted(async () => {
   flex-flow: row nowrap;
   justify-content: center;
   font-family: "sofia_pro_semi_bold_az";
-  color: #67bed9;
+  color: #70b9be;
   cursor: pointer;
 }
 
@@ -450,7 +450,7 @@ onMounted(async () => {
 }
 
 .category_item_active {
-  background-color: #67bed9;
+  background-color: #70b9be;
   color: #ffffff;
 }
 

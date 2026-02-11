@@ -79,7 +79,7 @@ const handleErrorModalClose = () => {
 }
 
 .navigation_item:hover {
-  color: #67bed9;
+  color: #70b9be;
   transition: 0.5s ease;
 }
 
