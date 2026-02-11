@@ -6,16 +6,21 @@
         backgroundImage: `url(${navigationItem.url})`,
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-      }" class="navigation_item_icon_special font_size_xl">
+      }" class="navigation_item_icon_special font_size_xl"  @click="navigate(navigationItem)">
       </div>
-      <div v-else :class="navigationItem.class" class="navigation_item_icon font_size_xl" :key="key"></div>
+      <div v-else :class="navigationItem.class" class="navigation_item_icon font_size_xl" :key="key"  @click="navigate(navigationItem)"></div>
     </div>
   </div>
+  <errorModal v-if="modalShow" :errorMessage="''" @close="handleErrorModalClose" />
+
 </template>
 
 <script setup>
 import chefIcon from '../assets/icons/chef_icon.png'
+import errorModal from '../widget/Modal.vue'
+import { ref } from 'vue'
 
+const modalShow = ref(false)
 const navigationItems = [
   { key: "chef", label: "Home", class: "fa fa-home" },
   { key: "search", label: "Search", class: "fa fa-search" },
@@ -23,6 +28,14 @@ const navigationItems = [
   { key: "alert_icon", label: "Alert", class: "far fa-bell" },
   { key: "user", label: "User", class: "far fa-user-circle" }
 ]
+
+const navigate = (item) => {
+  modalShow.value = true
+}
+
+const handleErrorModalClose = () => {
+  modalShow.value = false
+}
 
 </script>
 
@@ -65,6 +78,11 @@ const navigationItems = [
   position: relative;
 }
 
+.navigation_item:hover {
+  color: #67bed9;
+  transition: 0.5s ease;
+}
+
 .navigation_item_icon,
 .navigation_item_icon_special {
   width: 4rem;
@@ -84,6 +102,11 @@ const navigationItems = [
   background-color: #042628;
   color: #ffffff;
   margin-bottom: 7rem;
+}
+
+.navigation_item_icon_special:hover {
+  transform: translateY(-1.5rem);
+  transition: 0.5s ease;
 }
 
 @media (max-width: 768px) {
